@@ -1,0 +1,26 @@
+{
+  "name": "sonos-announcer",
+  "version": "0.1.0",
+  "private": true,
+  "devDependencies": {
+    "express": "^4.14.0",
+    "express-request-proxy": "^2.0.0",
+    "react-scripts": "0.8.5",
+    "yargs": "^6.6.0"
+  },
+  "dependencies": {
+    "material-ui": "^0.16.7",
+    "react": "^15.4.2",
+    "react-dom": "^15.4.2",
+    "react-tap-event-plugin": "^2.0.1",
+    "recompose": "^0.21.2",
+    "reselect": "^2.5.4"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "proxy": "node proxy.js --appUrl http://localhost:3000 --apiUrl http://localhost:5005",
+    "build": "react-scripts build",
+    "test": "react-scripts test --env=jsdom",
+    "eject": "react-scripts eject"
+  }
+}
